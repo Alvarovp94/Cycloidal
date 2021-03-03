@@ -26,14 +26,11 @@ inp4 = float(st.sidebar.text_input('E:', '0.5'))
 
 #p = figure(plot_width=700, plot_height=700)
 
-fig1 = figure()
-fig1.sizing_mode = 'scale_width'
-
-fig2 = figure()
-fig2.sizing_mode = 'scale_width'
-
-p = bokeh.layouts.column([fig1, fig2])
+p = figure()
 p.sizing_mode = 'scale_width'
+
+
+
 
 
 
