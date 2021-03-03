@@ -167,5 +167,6 @@ p.circle(cp12x, cp12y, color='red', size= 5)
 
 st.bokeh_chart(p)
 
+st.text('Alvaro Vasquez, 03.03.2021')
 
 #chart_data = pd.DataFrame(cp1x, cp1y)
