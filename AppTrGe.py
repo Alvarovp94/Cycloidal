@@ -14,6 +14,7 @@ import numpy as np
 
 
 from bokeh.plotting import figure, output_file, show
+import bokeh.layouts
 
 inp1 = float(st.sidebar.text_input('R:', '21.5'))
 inp2 = float(st.sidebar.text_input('r:', '1.5'))
@@ -23,7 +24,19 @@ inp4 = float(st.sidebar.text_input('E:', '0.5'))
 
 
 
-p = figure(plot_width=700, plot_height=700)
+#p = figure(plot_width=700, plot_height=700)
+
+fig1 = figure()
+fig1.sizing_mode = 'scale_width'
+
+fig2 = figure()
+fig2.sizing_mode = 'scale_width'
+
+p = bokeh.layouts.column([fig1, fig2])
+p.sizing_mode = 'scale_width'
+
+
+
 
 
 
